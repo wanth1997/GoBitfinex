@@ -3,7 +3,7 @@ package wallet_test
 import (
 	"testing"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/wallet"
+	"github.com/wanth1997/GoBitfinex/pkg/models/wallet"
 	"github.com/stretchr/testify/assert"
 )
 

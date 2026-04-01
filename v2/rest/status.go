@@ -6,7 +6,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/derivatives"
+	"github.com/wanth1997/GoBitfinex/pkg/models/derivatives"
 )
 
 // TradeService manages the Trade endpoint.

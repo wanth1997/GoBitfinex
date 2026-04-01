@@ -1,7 +1,7 @@
 package rest
 
 import (
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/common"
+	"github.com/wanth1997/GoBitfinex/pkg/models/common"
 )
 
 // AccountService manages the Account endpoint.

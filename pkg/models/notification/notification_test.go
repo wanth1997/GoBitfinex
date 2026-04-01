@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/fundingoffer"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/notification"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/order"
+	"github.com/wanth1997/GoBitfinex/pkg/models/fundingoffer"
+	"github.com/wanth1997/GoBitfinex/pkg/models/notification"
+	"github.com/wanth1997/GoBitfinex/pkg/models/order"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

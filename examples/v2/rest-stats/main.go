@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/common"
-	"github.com/bitfinexcom/bitfinex-api-go/v2/rest"
+	"github.com/wanth1997/GoBitfinex/pkg/models/common"
+	"github.com/wanth1997/GoBitfinex/v2/rest"
 	"github.com/davecgh/go-spew/spew"
 )
 

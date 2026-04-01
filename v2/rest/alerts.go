@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/common"
+	"github.com/wanth1997/GoBitfinex/pkg/models/common"
 )
 
 // AlertService manages the Alert endpoint.

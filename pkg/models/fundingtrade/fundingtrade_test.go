@@ -3,7 +3,7 @@ package fundingtrade_test
 import (
 	"testing"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/fundingtrade"
+	"github.com/wanth1997/GoBitfinex/pkg/models/fundingtrade"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

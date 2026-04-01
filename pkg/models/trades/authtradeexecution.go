@@ -3,7 +3,7 @@ package trades
 import (
 	"fmt"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/convert"
+	"github.com/wanth1997/GoBitfinex/pkg/convert"
 )
 
 // AuthTradeExecution used for mapping authenticated trade execution raw messages

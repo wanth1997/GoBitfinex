@@ -3,7 +3,7 @@ package tradeexecutionupdate
 import (
 	"fmt"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/convert"
+	"github.com/wanth1997/GoBitfinex/pkg/convert"
 )
 
 // TradeExecutionUpdate represents a full update to a trade on the private data feed.  Following a TradeExecution,

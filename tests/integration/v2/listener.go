@@ -5,17 +5,17 @@ import (
 	"log"
 	"time"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/balanceinfo"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/fundinginfo"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/margin"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/notification"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/order"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/position"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/ticker"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/tradeexecution"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/tradeexecutionupdate"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/wallet"
-	"github.com/bitfinexcom/bitfinex-api-go/v2/websocket"
+	"github.com/wanth1997/GoBitfinex/pkg/models/balanceinfo"
+	"github.com/wanth1997/GoBitfinex/pkg/models/fundinginfo"
+	"github.com/wanth1997/GoBitfinex/pkg/models/margin"
+	"github.com/wanth1997/GoBitfinex/pkg/models/notification"
+	"github.com/wanth1997/GoBitfinex/pkg/models/order"
+	"github.com/wanth1997/GoBitfinex/pkg/models/position"
+	"github.com/wanth1997/GoBitfinex/pkg/models/ticker"
+	"github.com/wanth1997/GoBitfinex/pkg/models/tradeexecution"
+	"github.com/wanth1997/GoBitfinex/pkg/models/tradeexecutionupdate"
+	"github.com/wanth1997/GoBitfinex/pkg/models/wallet"
+	"github.com/wanth1997/GoBitfinex/v2/websocket"
 )
 
 type listener struct {

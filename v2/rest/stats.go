@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/common"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/stats"
+	"github.com/wanth1997/GoBitfinex/pkg/models/common"
+	"github.com/wanth1997/GoBitfinex/pkg/models/stats"
 )
 
 // StatsService manages the Stats endpoint.

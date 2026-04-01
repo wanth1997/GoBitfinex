@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/convert"
+	"github.com/wanth1997/GoBitfinex/pkg/convert"
 )
 
 // Trade represents a trade on the public data feed.

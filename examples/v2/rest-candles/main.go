@@ -4,9 +4,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/common"
-	bfx "github.com/bitfinexcom/bitfinex-api-go/v2"
-	"github.com/bitfinexcom/bitfinex-api-go/v2/rest"
+	"github.com/wanth1997/GoBitfinex/pkg/models/common"
+	bfx "github.com/wanth1997/GoBitfinex/v2"
+	"github.com/wanth1997/GoBitfinex/v2/rest"
 	"github.com/davecgh/go-spew/spew"
 )
 

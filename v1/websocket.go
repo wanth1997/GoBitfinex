@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/utils"
+	"github.com/wanth1997/GoBitfinex/pkg/utils"
 
 	"github.com/gorilla/websocket"
 )

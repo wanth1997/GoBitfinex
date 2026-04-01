@@ -3,7 +3,7 @@ package rest
 import (
 	"path"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/common"
+	"github.com/wanth1997/GoBitfinex/pkg/models/common"
 )
 
 // MovementsService manages the Movements endpoint.

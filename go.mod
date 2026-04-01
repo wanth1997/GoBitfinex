@@ -1,4 +1,4 @@
-module github.com/bitfinexcom/bitfinex-api-go
+module github.com/wanth1997/GoBitfinex
 
 go 1.21
 

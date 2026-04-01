@@ -3,19 +3,19 @@ package main
 import (
 	"log"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/balanceinfo"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/event"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/fundingcredit"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/fundingloan"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/fundingoffer"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/fundingtrade"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/margin"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/notification"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/order"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/position"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/trades"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/wallet"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/mux"
+	"github.com/wanth1997/GoBitfinex/pkg/models/balanceinfo"
+	"github.com/wanth1997/GoBitfinex/pkg/models/event"
+	"github.com/wanth1997/GoBitfinex/pkg/models/fundingcredit"
+	"github.com/wanth1997/GoBitfinex/pkg/models/fundingloan"
+	"github.com/wanth1997/GoBitfinex/pkg/models/fundingoffer"
+	"github.com/wanth1997/GoBitfinex/pkg/models/fundingtrade"
+	"github.com/wanth1997/GoBitfinex/pkg/models/margin"
+	"github.com/wanth1997/GoBitfinex/pkg/models/notification"
+	"github.com/wanth1997/GoBitfinex/pkg/models/order"
+	"github.com/wanth1997/GoBitfinex/pkg/models/position"
+	"github.com/wanth1997/GoBitfinex/pkg/models/trades"
+	"github.com/wanth1997/GoBitfinex/pkg/models/wallet"
+	"github.com/wanth1997/GoBitfinex/pkg/mux"
 )
 
 func main() {

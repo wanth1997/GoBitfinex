@@ -8,7 +8,7 @@ import (
 
 	"github.com/op/go-logging"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/utils"
+	"github.com/wanth1997/GoBitfinex/pkg/utils"
 )
 
 // mockAsync is a minimal Asynchronous implementation for testing.

@@ -3,7 +3,7 @@ package derivatives
 import (
 	"fmt"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/convert"
+	"github.com/wanth1997/GoBitfinex/pkg/convert"
 )
 
 type Snapshot struct {

@@ -3,7 +3,7 @@ package rest
 import (
 	"encoding/json"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/common"
+	"github.com/wanth1997/GoBitfinex/pkg/models/common"
 )
 
 // SettingsService manages the User Settings endpoint.

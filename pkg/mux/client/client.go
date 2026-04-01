@@ -9,9 +9,9 @@ import (
 	"errors"
 	"net"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/event"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/mux/msg"
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/utils"
+	"github.com/wanth1997/GoBitfinex/pkg/models/event"
+	"github.com/wanth1997/GoBitfinex/pkg/mux/msg"
+	"github.com/wanth1997/GoBitfinex/pkg/utils"
 	"github.com/gobwas/ws"
 	"github.com/gobwas/ws/wsutil"
 )

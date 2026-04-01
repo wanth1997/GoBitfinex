@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/bitfinexcom/bitfinex-api-go/pkg/models/fundingoffer"
+	"github.com/wanth1997/GoBitfinex/pkg/models/fundingoffer"
 	"github.com/stretchr/testify/assert"
 )
 
