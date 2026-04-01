@@ -94,6 +94,32 @@ func NewClientWithURLHttpDoNonce(base string, httpDo func(c *http.Client, r *htt
 	return NewClientWithSynchronousNonce(sync, nonce)
 }
 
+// NewClientWithHTTPClient creates a new Rest client with a custom http.Client.
+// This is useful for routing requests through a proxy:
+//
+//	proxyURL, _ := url.Parse("http://user:pass@gate.smartproxy.com:7000")
+//	httpClient := &http.Client{
+//	    Transport: &http.Transport{Proxy: http.ProxyURL(proxyURL)},
+//	}
+//	client := rest.NewClientWithHTTPClient(httpClient)
+func NewClientWithHTTPClient(httpClient *http.Client) *Client {
+	return NewClientWithURLHTTPClient(productionBaseURL, httpClient)
+}
+
+// NewClientWithURLHTTPClient creates a new Rest client with a custom base url and http.Client.
+func NewClientWithURLHTTPClient(base string, httpClient *http.Client) *Client {
+	httpDo := func(_ *http.Client, req *http.Request) (*http.Response, error) {
+		return httpClient.Do(req)
+	}
+	u, _ := url.Parse(base)
+	sync := &HttpTransport{
+		BaseURL:    u,
+		httpDo:     httpDo,
+		HTTPClient: httpClient,
+	}
+	return NewClientWithSynchronousNonce(sync, utils.NewEpochNonceGenerator())
+}
+
 // Create a new Rest client with a custom base url
 func NewClientWithURL(url string) *Client {
 	httpDo := func(c *http.Client, req *http.Request) (*http.Response, error) {
