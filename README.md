@@ -12,7 +12,7 @@ A Go reference implementation of the Bitfinex API for both REST and websocket in
 ## Installation
 
 ```bash
-go get github.com/bitfinexcom/bitfinex-api-go
+go get github.com/wanth1997/GoBitfinex
 ```
 
 ## Quickstart
@@ -26,8 +26,8 @@ import (
     "os"
     "time"
 
-    "github.com/bitfinexcom/bitfinex-api-go/pkg/models/order"
-    "github.com/bitfinexcom/bitfinex-api-go/v2/rest"
+    "github.com/wanth1997/GoBitfinex/pkg/models/order"
+    "github.com/wanth1997/GoBitfinex/v2/rest"
 )
 
 func main() {
@@ -101,7 +101,7 @@ client := rest.NewClient().Credentials("API_KEY", "API_SEC")
 #### Subscribe to Trades (Websocket)
 
 ```go
-// using github.com/bitfinexcom/bitfinex-api-go/v2/websocket
+// using github.com/wanth1997/GoBitfinex/v2/websocket
 _, err := client.SubscribeTrades(context.Background(), "tBTCUSD")
 if err != nil {
     log.Printf("could not subscribe to trades: %s", err.Error())
@@ -111,7 +111,7 @@ if err != nil {
 #### Get Order History (REST)
 
 ```go
-// using github.com/bitfinexcom/bitfinex-api-go/v2/rest
+// using github.com/wanth1997/GoBitfinex/v2/rest
 os, err := client.Orders.AllHistory()
 if err != nil {
     log.Fatalf("getting orders: %s", err)
@@ -127,20 +127,20 @@ if err != nil {
 }
 ```
 
-See the **[examples](https://github.com/bitfinexcom/bitfinex-api-go/tree/master/examples)** directory for more, including:
+See the **[examples](https://github.com/wanth1997/GoBitfinex/tree/master/examples)** directory for more, including:
 
-- [Creating/updating an order](https://github.com/bitfinexcom/bitfinex-api-go/blob/master/examples/v2/ws-update-order/main.go)
-- [Subscribing to orderbook updates](https://github.com/bitfinexcom/bitfinex-api-go/blob/master/examples/v2/book-feed/main.go)
-- [Integrating a custom logger](https://github.com/bitfinexcom/bitfinex-api-go/blob/master/examples/v2/ws-custom-logger/main.go)
-- [Submitting funding offers](https://github.com/bitfinexcom/bitfinex-api-go/blob/master/examples/v2/rest-funding/main.go)
-- [Retrieving active positions](https://github.com/bitfinexcom/bitfinex-api-go/blob/master/examples/v2/rest-positions/main.go)
+- [Creating/updating an order](https://github.com/wanth1997/GoBitfinex/blob/master/examples/v2/ws-update-order/main.go)
+- [Subscribing to orderbook updates](https://github.com/wanth1997/GoBitfinex/blob/master/examples/v2/book-feed/main.go)
+- [Integrating a custom logger](https://github.com/wanth1997/GoBitfinex/blob/master/examples/v2/ws-custom-logger/main.go)
+- [Submitting funding offers](https://github.com/wanth1997/GoBitfinex/blob/master/examples/v2/rest-funding/main.go)
+- [Retrieving active positions](https://github.com/wanth1997/GoBitfinex/blob/master/examples/v2/rest-positions/main.go)
 
 ## V1 API Note
 
 The V1 API is fully functional but considered legacy. All V1 service methods are prefixed with `V1` for explicit version identification:
 
 ```go
-import "github.com/bitfinexcom/bitfinex-api-go/v1"
+import "github.com/wanth1997/GoBitfinex/v1"
 
 client := bitfinex.NewClient().Auth(key, secret)
 
@@ -179,7 +179,7 @@ Order books with precision `R0` are 'raw' and contain entries for each individua
 
 ## Contributing
 
-1. Fork it (https://github.com/bitfinexcom/bitfinex-api-go/fork)
+1. Fork it (https://github.com/wanth1997/GoBitfinex/fork)
 2. Create your feature branch (`git checkout -b feat/my-new-feature`)
 3. Commit your changes (`git commit -m 'feat: add some feature'`)
 4. Push to the branch (`git push origin feat/my-new-feature`)
