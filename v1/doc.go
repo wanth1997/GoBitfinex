@@ -1,6 +1,6 @@
 package bitfinex
 
-// Package bitfinex-api-go provides structs and functions for accessing
+// Package GoBitfinex provides structs and functions for accessing
 // bitfinex.com api version 1.0
 //
 // Usage:

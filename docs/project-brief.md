@@ -1,4 +1,4 @@
-# bitfinex-api-go
+# GoBitfinex
 
 ## 目標
 Bitfinex 交易所的官方 Go 語言 API 客戶端，提供 REST 與 WebSocket 兩種介面，支援 v1 (legacy) 與 v2 版本。
