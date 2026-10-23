@@ -1,3 +1,14 @@
+## 2026-10-23 13:30 — Go toolchain 升級至 go1.26.10（安全修補）
+
+**改動摘要：** 將 Go toolchain 釘到 go1.26.10，納入 2026-10-19 的 crypto/x509 安全修補（封鎖金鑰外洩的 eMudhra 中繼憑證）與先前累積的 Go 安全修正；go 1.24／1.25 已停止支援，不會再收到修補。
+
+**修改的檔案：**
+- `go.mod` — toolchain go1.26.10
+
+**原因/備註：** go1.26.10 下 go build ./... 與 go test ./... 通過。
+
+---
+
 ## 2026-04-01 17:30 — v1 函數重命名 + v2 derivatives bug 修正 + v2 新增 31 個 endpoint
 
 **改動摘要：** 將所有 v1 exported 函數加上 V1 前綴（37 個函數），修正 derivatives.go 的 permission 與 type assertion bug，新增 31 個 v2 REST API endpoint

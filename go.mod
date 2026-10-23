@@ -2,6 +2,8 @@ module github.com/wanth1997/GoBitfinex
 
 go 1.21
 
+toolchain go1.26.10
+
 require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/gobwas/ws v1.0.4
