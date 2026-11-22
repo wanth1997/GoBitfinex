@@ -1,4 +1,4 @@
 # Websocket public book
 
-This is a simple example showing off how to connect to the websocket service
-and subscribe to one of the public ticker channels.
+This example connects to the v2 WebSocket service and subscribes to a public
+order book channel (and trades channel) with checksum verification enabled.
