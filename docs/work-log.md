@@ -1,3 +1,19 @@
+# 工作記錄
+
+## 2026-11-22 18:46 — 補齊 Agent 文檔與同步 API 參考文件
+
+**改動摘要：** 新增根目錄 `AGENTS.md` 與 `CLAUDE.md`，補回 `docs/work-log.md` H1 標題，同步 `docs/project-brief.md`、`v1/doc.go`、`examples/v2/ws-book/README.md`，並將過時自動產生的 `docs/v1.md` 與 `docs/rest_v2.md` 改寫為對齊程式碼與 `go doc` 的精簡參考索引。
+
+**修改的檔案：**
+- `AGENTS.md`、`CLAUDE.md` — 新增專案 Agent 說明與 `@AGENTS.md` 指標
+- `docs/project-brief.md` — 同步 `toolchain go1.26.10`、修正 `pkg/models/` 數量為 27、合併重複 `## 重要決策`
+- `docs/work-log.md` — 補回 `# 工作記錄` 標題並追加本筆記錄
+- `v1/doc.go` — 修正 package usage import 路徑為 `github.com/wanth1997/GoBitfinex/v1`
+- `examples/v2/ws-book/README.md` — 修正為 order book（與 trades）訂閱＋checksum 範例說明
+- `docs/v1.md`、`docs/rest_v2.md` — 取代過時 `godocdown` 輸出，完整反映 `V1*` 方法與 23 個 REST v2 services 並引導使用 `go doc`
+
+---
+
 ## 2026-10-23 13:30 — Go toolchain 升級至 go1.26.10（安全修補）
 
 **改動摘要：** 將 Go toolchain 釘到 go1.26.10，納入 2026-10-19 的 crypto/x509 安全修補（封鎖金鑰外洩的 eMudhra 中繼憑證）與先前累積的 Go 安全修正；go 1.24／1.25 已停止支援，不會再收到修補。

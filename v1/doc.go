@@ -4,7 +4,7 @@ package bitfinex
 // bitfinex.com api version 1.0
 //
 // Usage:
-//   import "github.com/wanth1997/GoBitfinex"
+//   import "github.com/wanth1997/GoBitfinex/v1"
 //
 // Create new client:
 //   api := bitfinex.NewClient()
